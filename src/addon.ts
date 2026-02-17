@@ -30,8 +30,7 @@ import { exec, execFile, spawn } from 'child_process';
 const execFilePromise = util.promisify(execFile);
 const DEFAULT_VAVOO_UA = 'VAVOO/3.1.21';
 
-import * as crypto from 'crypto';
-import * as util from 'util';
+
 
 
 // ================= TYPES & INTERFACES =================
