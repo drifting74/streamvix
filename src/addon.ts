@@ -24,11 +24,12 @@ declare function require(name: string): any;
 declare const global: any;
 
 import { EPGManager } from './utils/epg';
+import * as util from 'util';
+import * as crypto from 'crypto';
 import { exec, execFile, spawn } from 'child_process';
-// import { getSponScheduleStream } from './extractors/sponSchedule';
-// import { getSportsonlineStream } from './extractors/sportsonline';
 const execFilePromise = util.promisify(execFile);
 const DEFAULT_VAVOO_UA = 'VAVOO/3.1.21';
+
 import * as crypto from 'crypto';
 import * as util from 'util';
 
