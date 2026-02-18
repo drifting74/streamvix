@@ -10,10 +10,6 @@
     "dev": "ts-node src/addon.ts",
     "check:domains": "node scripts/check_domains.js"
   },
-  
-
-    "check:domains": "node scripts/check_domains.js"
-  },
   "dependencies": {
     "@keyv/sqlite": "^4.0.5",
     "async-mutex": "^0.5.0",
