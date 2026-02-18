@@ -5,7 +5,7 @@
   "main": "dist/addon.js",
   "packageManager": "pnpm@8.15.5",
   "scripts": {
-    "build": "tsc && shx cp -r config dist/",
+    "build": "tsc && shx cp -r config dist/ && shx cp addon-config.json dist/"
     "start": "node dist/addon.js",
     "dev": "ts-node src/addon.ts",
     "check:domains": "node scripts/check_domains.js"
