@@ -4,7 +4,7 @@
   "description": "Personal StreamViX addon con Vixsrc, Guardaserie, Altadefinizione, AnimeUnity, AnimeSaturn, AnimeWorld, Eurostreaming, TV ed Eventi Live",
   "main": "dist/addon.js",
   "packageManager": "pnpm@8.15.5",
-  "scripts": {scripts": {
+  "scripts": {
     "build": "tsc && shx cp -r config dist/ && shx cp addon-config.json dist/",
     "start": "node dist/addon.js",
     "dev": "ts-node src/addon.ts",
