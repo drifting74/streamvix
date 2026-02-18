@@ -3,5 +3,10 @@
     "addonId": "org.iceblinker.streamvix",
     "addonDescription": "Personal StreamViX addon con VixSRC (Solo Movies/Series)",
     "addonVersion": "7.16.23",
-    "addonLogo": "https://raw.githubusercontent.com/iceblinker/streamvix/refs/heads/main/public/icon.png"
+    "addonLogo": "https://raw.githubusercontent.com/iceblinker/streamvix/refs/heads/main/public/icon.png",
+    "mediaFlowProxyUrl": "https://mediaflow.138.199.156.62.sslip.io",
+    "mediaFlowProxyPassword": "LA_TUA_PASSWORD"
 }
+
+
+
