@@ -1,12 +1,12 @@
 {
     "addonName": "VPS - VixSrc",
     "addonId": "org.iceblinker.streamvix",
-    "addonDescription": "Personal StreamViX addon con VixSRC (Solo Movies/Series)",
-    "addonVersion": "7.16.23",
+    "addonDescription": "Personal StreamViX addon con VixSRC, Live TV e Sport",
+    "addonVersion": "7.16.24",
     "addonLogo": "https://raw.githubusercontent.com/iceblinker/streamvix/refs/heads/main/public/icon.png",
-    "mediaFlowProxyUrl": "https://mediaflow.138.199.156.62.sslip.io",
-    "mediaFlowProxyPassword": "LA_TUA_PASSWORD"
+    "catalogs": [
+        {"type": "movie", "id": "vixsrc_movies", "name": "VixSrc Movies"},
+        {"type": "series", "id": "vixsrc_series", "name": "VixSrc Series"},
+        {"type": "tv", "id": "live_tv", "name": "Live TV"}
+    ]
 }
-
-
-
