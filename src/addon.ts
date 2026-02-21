@@ -323,7 +323,7 @@ const baseManifest: Manifest = {
             extra: [{ name: "genre", isRequired: false  }] 
         }
     ],
-    resources: ["stream"],
+    resources: ["stream", "meta"],
     behaviorHints: { configurable: true },
     config: [
         { key: "tmdbApiKey", title: "TMDB API Key", type: "text" },
