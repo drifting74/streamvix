@@ -316,6 +316,12 @@ const baseManifest: Manifest = {
     types: ["movie", "series", "tv"],
     idPrefixes: ["tt", "tmdb"],
     catalogs: [
+        {
+            type: "tv" as ContentType,
+            id: "Live_tv",
+            name: "Live_TV & Sport",
+            extra: [{ name: "genre", isRequired: false  }] 
+        }
     ],
     resources: ["stream"],
     behaviorHints: { configurable: true },
