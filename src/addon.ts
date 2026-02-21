@@ -3360,7 +3360,7 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
 function startServer(basePort: number, attempts = 0) {
     const PORT = basePort + attempts;
     const server = app.listen(PORT, () => {
-        console.log(`Addon server running on http://127.0.0.1:${PORT}`);
+        console.log(`Addon server running on http://0.0.0.0:${PORT}`);
     });
     server.on('error', (err: any) => {
         if (err.code === 'EADDRINUSE' && attempts < 10) {
