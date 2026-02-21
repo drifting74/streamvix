@@ -313,7 +313,7 @@ const baseManifest: Manifest = {
     name: "StreamViX Personal",
     description: "StreamViX addon con VixSRC (Solo Movies/Series)",
     background: "https://raw.githubusercontent.com/qwertyuiop8899/StreamViX/refs/heads/main/public/backround.png",
-    types: ["movie", "series"],
+    types: ["movie", "series", "tv"],
     idPrefixes: ["tt", "tmdb"],
     catalogs: [
     ],
