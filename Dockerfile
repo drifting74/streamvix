@@ -1,6 +1,6 @@
 # Scegli un'immagine Node.js di base  
 FROM node:20-slim
-ARG CACHE_BUST=23
+ARG CACHE_BUST=24
 RUN echo "Cache bust: $CACHE_BUST"
 
 # Installa python3, pip e dipendenze per compilazione  
