@@ -2475,8 +2475,7 @@ function createBuilder(initialConfig: AddonConfig = {}) {
                     // Vavoo
                     if (!dynamicHandled && (channel as any).name) {
                         // DEBUG LOGS
-                        console.log('🔧 [VAVOO] DEBUG - channel.name:', (channel as any).name);
-                        fix: preserve channel name numbers for Vavoo matching
+                        console.log('🔧 [VAVOO] DEBUG - channel.name:', (channel as any).name)
                         console.log('🔧 [VAVOO] DEBUG - baseName:', baseName);
                         const variant2 = `${baseName} (2)`;
                         const variantNum = `${baseName} 2`;
