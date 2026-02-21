@@ -318,7 +318,7 @@ const baseManifest: Manifest = {
     catalogs: [
         {
             type: "tv" as ContentType,
-            id: "Live_tv",
+            id: "live_tv",
             name: "Live_TV & Sport",
             extra: [{ name: "genre", isRequired: false  }] 
         }
