@@ -1854,7 +1854,7 @@ function createBuilder(initialConfig: AddonConfig = {}) {
                     mfpUrl = (config.mediaFlowProxyUrl || (process && process.env && (process.env.MFP_URL || process.env.MEDIAFLOW_PROXY_URL)) || '').toString().trim();
                     mfpUrl = (config.mediaFlowProxyPassword || (process && process.env && (process.env.MFP_PASSWORD || process.env.MEDIAFLOW_PROXY_PASSWORD)) || '').toString().trim();
 } catch { }
-                let mfpUrl = mfpUrl ? normalizeProxyUrl(mfpUrl) : '';
+                let mfpUrl:any = mfpUrl ? normalizeProxyUrl(mfpUrl) : '';
                 let mfpPsw = mfpPswRaw;
                 debugLog(`[MFP] Using url=${mfpUrl ? 'SET' : 'MISSING'} pass=${mfpPsw ? 'SET' : 'MISSING'}`);
 
