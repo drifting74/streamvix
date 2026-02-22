@@ -1849,12 +1849,13 @@ function createBuilder(initialConfig: AddonConfig = {}) {
                 // Prima della logica degli stream TV, aggiungi:
                 // Usa sempre lo stesso proxy per tutto
                 // MediaFlow config: allow fallback to environment variables if not provided via addon config
+                let mfpUrlRaw = '';
                 let mfpPswRaw = '';
                 try {
-                    mfpUrl = (config.mediaFlowProxyUrl || (process && process.env && (process.env.MFP_URL || process.env.MEDIAFLOW_PROXY_URL)) || '').toString().trim();
-                    mfpUrl = (config.mediaFlowProxyPassword || (process && process.env && (process.env.MFP_PASSWORD || process.env.MEDIAFLOW_PROXY_PASSWORD)) || '').toString().trim();
-} catch { }
-                let mfpUrl:any = mfpUrl ? normalizeProxyUrl(mfpUrl) : '';
+                    mfpUrlRaw = (config.mediaFlowProxyUrl || process.env.MFP_URL || process.env.MEDIAFLOW_PROXY_URL || '').toString().trim();
+                    mfpPswRaw = (config.mediaFlowProxyPassword || process.env.MFP_PASSWORD || process.env.MEDIAFLOW_PROXY_PASSWORD || process.env.MFP_PSW || '').toString().trim();
+                } catch { }
+                let mfpUrl = mfpUrlRaw ? normalizeProxyUrl(mfpUrlRaw) : '';
                 let mfpPsw = mfpPswRaw;
                 debugLog(`[MFP] Using url=${mfpUrl ? 'SET' : 'MISSING'} pass=${mfpPsw ? 'SET' : 'MISSING'}`);
 
@@ -3374,9 +3375,3 @@ function startServer(basePort: number, attempts = 0) {
 }
 const basePort = parseInt(process.env.PORT || '7860', 10);
 startServer(basePort);
-
-
-
-
-
-
