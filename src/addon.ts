@@ -1851,10 +1851,10 @@ function createBuilder(initialConfig: AddonConfig = {}) {
                 // MediaFlow config: allow fallback to environment variables if not provided via addon config
                 let mfpPswRaw = '';
                 try {
-                    mfpUrlRaw = (config.mediaFlowProxyUrl || (process && process.env && (process.env.MFP_URL || process.env.MEDIAFLOW_PROXY_URL)) || '').toString().trim();
-                    mfpUrlRaw = (config.mediaFlowProxyPassword || (process && process.env && (process.env.MFP_PASSWORD || process.env.MEDIAFLOW_PROXY_PASSWORD)) || '').toString().trim();
+                    mfpUrl = (config.mediaFlowProxyUrl || (process && process.env && (process.env.MFP_URL || process.env.MEDIAFLOW_PROXY_URL)) || '').toString().trim();
+                    mfpUrl = (config.mediaFlowProxyPassword || (process && process.env && (process.env.MFP_PASSWORD || process.env.MEDIAFLOW_PROXY_PASSWORD)) || '').toString().trim();
 } catch { }
-                let mfpUrl = mfpUrlRaw ? normalizeProxyUrl(mfpUrlRaw) : '';
+                let mfpUrl = mfpUrl ? normalizeProxyUrl(mfpUrl) : '';
                 let mfpPsw = mfpPswRaw;
                 debugLog(`[MFP] Using url=${mfpUrl ? 'SET' : 'MISSING'} pass=${mfpPsw ? 'SET' : 'MISSING'}`);
 
